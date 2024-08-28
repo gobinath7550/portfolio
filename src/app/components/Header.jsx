@@ -6,7 +6,7 @@ const Header = () => {
     <header className="flex items-center justify-between fixed z-50 top-8 left-8 right-8">
       <div className="bg-gradient-radial border-2 border-[#3d0658] from-[#0d0029] to-[#3d0658] p-2 rounded-xl">
         <Image
-          src="/images/main-logo.png"
+          src="/portfolio/images/main-logo.png"
           alt="G"
           width={40}
           height={40}

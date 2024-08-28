@@ -49,7 +49,7 @@ export default function Home() {
           <figure className="rounded-full bg-gradient-to-l from-[#1b0a3f] to-[#2a043d] flex items-center justify-center group transition-all shadow-lg border-2 border-[#58117b]">
             <figcaption className="flex items-center w-1/4 justify-center">
               <Image
-                src="/images/me.jpeg"
+                src="/portfolio/images/me.jpeg"
                 alt="G"
                 width={440}
                 height={440}
