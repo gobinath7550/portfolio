@@ -1,0 +1,16 @@
+export { Laravel_Svg } from "./Laravel_Svg";
+export { GraphQL_Svg } from "./GraphQL_Svg";
+export { REST_Svg } from "./REST_Svg";
+export { JQuery_Svg } from "./JQuery_Svg";
+export { ReactJS_Svg } from "./ReactJS_Svg";
+export { Tailwind_Svg } from "./Tailwind_Svg";
+export { CSS_Svg } from "./CSS_Svg";
+export { Shopify_Svg } from "./Shopify_Svg";
+export { Magento2_Svg } from "./Magento2_Svg";
+export { JS_Svg } from "./JS_Svg";
+export { PHP_Svg } from "./PHP_Svg";
+export { MySQL_Svg } from "./MySQL_Svg";
+export { HTML_Svg } from "./HTML_Svg";
+export { WhatsApp_Svg } from "./WhatsApp_Svg";
+export { GitHub_Svg } from "./GitHub_Svg";
+export { LinkedIn_Svg } from "./LinkedIn_Svg";
