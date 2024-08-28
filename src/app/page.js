@@ -36,7 +36,7 @@ export default function Home() {
           <div className="p-4 flex justify-center items-center relative z-10 main-img-animation">
             <div className="border-b-2 border-[#58117b] p-7 rounded-full">
               <Image
-                src="/images/home-banner-img.png"
+                src="/portfolio/images/home-banner-img.png"
                 alt="G"
                 width={440}
                 height={440}
@@ -83,7 +83,7 @@ export default function Home() {
             <div className="w-full bg-[#58117b] p-4 mt-10 rounded-3xl">
               <div className="flex gap-2">
                 <Image
-                  src="/images/ewall-logo.jpg"
+                  src="/portfolio/images/ewall-logo.jpg"
                   alt="G"
                   width={70}
                   height={30}
