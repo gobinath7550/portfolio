@@ -54,7 +54,7 @@ export default function Home() {
           <div className="p-4 flex justify-center items-center relative z-10 main-img-animation">
             <div className="border-b-2 border-[#58117b] p-7 rounded-full">
               <Image
-                src="/portfolio/images/home-banner-img.png"
+                src="/portfolio/images/home-banner-img-min.png"
                 alt="G"
                 width={440}
                 height={440}
