@@ -16,6 +16,24 @@ import {
   Shopify_Svg,
 } from "./components/svg-icons";
 
+const CapsuleCard = ({ Icon, title }) => {
+  return (
+    <div className="bg-[#58117b] flex items-center justify-between border-[1px] border-[#58117b] rounded-full">
+      <div className="w-fit">
+        <div
+          data-node="HTML"
+          className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
+        >
+          <Icon />
+        </div>
+      </div>
+      <div className="w-full ml-10">
+        <span className="font-extrabold text-md text-slate-200">{title}</span>
+      </div>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <>
@@ -23,12 +41,12 @@ export default function Home() {
       <main className="bg-gradient-to-r from-[#0d0029] to-[#3d0658] min-h-screen flex-col items-center justify-center p-12">
         <section className="mt-20 relative">
           <div className="absolute z-0 left-1/2 -top-6 transform -translate-x-1/2 -translate-y-7">
-            <h1 className="text-[200px] text-center text-nowrap p-4 px-8 rounded-full font-extrabold main-img-animation">
+            <h1 className="text-[calc(100vw-75vw)] text-center text-nowrap p-4 px-8 rounded-full font-extrabold main-img-animation">
               <span className="text-[#0d0029]">Hi</span>
             </h1>
           </div>
           <div className="absolute z-0 left-1/2 top-40 transform -translate-x-1/2 -translate-y-7">
-            <h1 className="text-6xl text-center text-nowrap p-4 px-8 text-shadow rounded-full font-extrabold">
+            <h1 className="text-[calc(100vw-95vw)] text-center text-nowrap p-4 px-8 text-shadow rounded-full font-extrabold">
               <span className="text-[#0d0029]">I am a </span>Full Stack Web
               Developer
             </h1>
@@ -129,198 +147,40 @@ export default function Home() {
                   Frontend
                 </h3>
                 <div className="grid grid-cols-3 gap-2">
-                  <div className="bg-[#58117b] flex items-center justify-between border-[1px] border-[#58117b] rounded-full">
-                    <div className="w-fit">
-                      <div
-                        data-node="HTML"
-                        className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                      >
-                        <HTML_Svg />
-                      </div>
-                    </div>
-                    <div className="w-full ml-10">
-                      <span className="font-extrabold text-md text-slate-200">
-                        HTML5
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-between border-[1px] border-[#58117b] rounded-full">
-                    <div className="w-fit">
-                      <div
-                        data-node="CSS"
-                        className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                      >
-                        <CSS_Svg />
-                      </div>
-                    </div>
-                    <div className="w-full ml-4">
-                      <span className="font-extrabold text-slate-200">
-                        CSS3
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-between border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="Tailwind"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <Tailwind_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        Tailwind
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-between border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="JS"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-4"
-                    >
-                      <JS_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        Java Script
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-between border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="JQuery"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <JQuery_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        JQuery
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-between border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="ReactJS"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <ReactJS_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        React JS
-                      </span>
-                    </div>
-                  </div>
+                  <CapsuleCard Icon={HTML_Svg} title="HTML5" />
+                  <CapsuleCard Icon={CSS_Svg} title="CSS3" />
+                  <CapsuleCard Icon={Tailwind_Svg} title="Tailwind" />
+                  <CapsuleCard Icon={JS_Svg} title="Java Script" />
+                  <CapsuleCard Icon={JQuery_Svg} title="JQuery" />
+                  <CapsuleCard Icon={ReactJS_Svg} title="React JS" />
                 </div>
               </div>
               <div>
                 <h3 className="text-slate-400 font-bold text-md leading-4">
                   Backend
                 </h3>
-                <div className="flex flex-wrap gap-2">
-                  <div className="bg-[#58117b] flex items-center justify-center border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="PHP"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <PHP_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">PHP</span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-center border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="MySQL"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <MySQL_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        MySQL
-                      </span>
-                    </div>
-                  </div>
+                <div className="grid grid-cols-3 gap-2">
+                  <CapsuleCard Icon={PHP_Svg} title="PHP" />
+                  <CapsuleCard Icon={MySQL_Svg} title="MySQL" />
                 </div>
               </div>
               <div>
                 <h3 className="text-slate-400 font-bold text-md leading-4">
                   API Architectures
                 </h3>
-                <div className="flex flex-wrap gap-2">
-                  <div className="bg-[#58117b] flex items-center justify-center border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="REST API"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <REST_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        REST
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-center border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="GraphQL API"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <GraphQL_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        GraphQL
-                      </span>
-                    </div>
-                  </div>
+                <div className="grid grid-cols-3 gap-2">
+                  <CapsuleCard Icon={REST_Svg} title="REST" />
+                  <CapsuleCard Icon={GraphQL_Svg} title="GraphQL" />
                 </div>
               </div>
               <div>
                 <h3 className="text-slate-400 font-bold text-md leading-4">
                   Frameworks
                 </h3>
-                <div className="flex flex-wrap gap-2">
-                  <div className="bg-[#58117b] flex items-center justify-center border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="Magento 2"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <Magento2_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        Magento 2
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-center border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="Laravel"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <Laravel_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        Laravel
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-[#58117b] flex items-center justify-center border-[1px] border-[#58117b] rounded-full">
-                    <div
-                      data-node="Shopify"
-                      className="bg-[#0d0029]/90 rounded-full w-20 h-20 p-3"
-                    >
-                      <Shopify_Svg />
-                    </div>
-                    <div className="mx-7">
-                      <span className="font-extrabold text-slate-200">
-                        Shopify
-                      </span>
-                    </div>
-                  </div>
+                <div className="grid grid-cols-3 gap-2">
+                  <CapsuleCard Icon={Magento2_Svg} title="Magento 2" />
+                  <CapsuleCard Icon={Laravel_Svg} title="Laravel" />
+                  <CapsuleCard Icon={Shopify_Svg} title="Shopify" />
                 </div>
               </div>
             </div>

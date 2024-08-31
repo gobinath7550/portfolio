@@ -28,3 +28,23 @@
 .text-shadow {
   text-shadow: 0px 0px 15px #6d5479;
 }
+
+.main-text-size {
+  font-size: calc(100%-10%);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-gradient-to-b from-[#812aad] via-[#ce6dff] to-[#812aad];
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #1f012e;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #812aad;
+}
